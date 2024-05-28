@@ -1,0 +1,148 @@
+/* src/styles/global.css */
+body, .app {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark, .app.dark {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #333;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.navbar button {
+  padding: 0.5rem;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 20px; /* Margem padrão entre os botões */
+  margin-top: 20rem;
+  text-align: center; /* Centraliza os botões verticalmente */
+}
+
+.home-buttons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--background-color);
+  padding: 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-buttons a:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.home-buttons a svg {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0.5rem;
+}
+
+--Estilo Contador 
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 23rem); /* Ajusta a altura do container a partir do topo */
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px; /* Define o tamanho do quadrado */
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.count {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.CONTADOR2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--background-color);
+  padding: 1rem;
+  margin-top: 14rem;
+  --border: 1px solid var(--text-color);
+}
+
+--Créditos
+.creditos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 23rem); /* Ajusta a altura do container a partir do topo */
+  margin-top: 14rem;
+}
+
+.creditos-content {
+  text-align: center;
+  margin-top: 14rem;
+}
+
+.API {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 23rem); /* Ajusta a altura do container a partir do topo */
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.H1{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
